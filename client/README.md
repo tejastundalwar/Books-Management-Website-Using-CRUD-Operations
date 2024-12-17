@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+Books Management Website (Client)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the client-side application for the Books Management Website that allows users to view, add, update, and delete books. It is built using React, Axios, and React Router for routing.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+View Books: Displays a list of books with details such as title, description, price, and cover image.
+Add Book: Allows users to add a new book with its details.
+Update Book: Enables users to update the details of an existing book.
+Delete Book: Provides the option to delete a book from the list.
+Routing: Uses React Router to navigate between pages (view, add, update books).
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Technologies Used
+React: A JavaScript library for building user interfaces.
+React Router: A library for routing in React applications.
+Axios: A promise-based HTTP client for making requests to the backend server.
+CSS: Used for basic styling of the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.Clone the Repository:
 
-### `npm run build`
+git clone https://github.com/your-username/Books-Management-Website-Using-CRUD-Operations.git
+cd Books-Management-Website-Using-CRUD-Operations/client
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.Install Dependencies: Make sure you have Node.js installed on your system. Then, install the required dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.Run the Development Server: To run the client-side application, use:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This will start the application on http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+API Integration
+The client application communicates with the backend API to perform CRUD operations on the books. The API endpoints used are:
 
-## Learn More
+GET /books: Fetch all books from the server.
+POST /books: Add a new book.
+PUT /books/:id: Update an existing book by its ID.
+DELETE /books/:id: Delete a book by its ID.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ensure the backend server is running on http://localhost:8800 or update the API base URL in the code accordingly.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+File Structure
 
-### Code Splitting
+client/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── Add.js          # Component for adding a new book
+│   │   └── Update.js       # Component for updating a book
+│   │   └── Books.js        # Component for displaying all books
+│   ├── pages/
+│   │   └── Addition.js     # Page for adding a new book
+│   │   └── Novels.js       # Page for displaying books
+│   ├── App.js              # Main React component, sets up routing
+│   ├── style.css           # Styles for the application
+├── package.json
+└── README.md
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Error Handling
+The application shows an error message if there is a failure in performing CRUD operations.
+The error message is displayed near the relevant action, such as during the addition or update of books.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+Feel free to fork this project and contribute. If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.

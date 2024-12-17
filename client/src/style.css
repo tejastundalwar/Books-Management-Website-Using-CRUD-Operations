@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background-color: #babbd7;
+}
+
+.App{
+    height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.books{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(20, 18, 18);
+}
+
+.delete{
+    margin-top: 10vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(20, 18, 18);
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.update{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(20, 18, 18);
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+.book{
+    flex: 1;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    background-color: rgb(166, 16, 16);
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(101, 2, 34);
+    background-color: rgba(210, 116, 54, 0.539);
+}
+
+.addHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-left: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.desc{
+    font-size: 30px;
+}
+
+.price{
+    font-size: 20px;
+}
